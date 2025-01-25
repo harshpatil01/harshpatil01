@@ -51,6 +51,21 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 
 ---
 
+## 📜 Certifications
+Here’s a collection of certifications I’ve earned to strengthen my knowledge and skills:
+
+- **[Data Science Certification](https://www.excelr.com/data-science-certification)** – ExcelR Institute  
+  *(Statistical Analysis, Machine Learning, Neural Networks, EDA, AI, and Big Data Tools)*  
+- **[Goethe-Zertifikat A1](https://drive.google.com/file/d/1Xk4YYolx0B8unx3Uw_bQ41TWLdQw9u_n/view)** – Goethe Institut  
+  *(Basic German Language Proficiency)*  
+- **[Emertxe Certified Embedded Professional (ECEP)](https://certificate.emertxe.com/?id=21014_020)** – Emertxe Information Technologies  
+  *(Linux Systems, Microcontrollers, Advanced C, and Data Structures)*  
+- **[Programming in Java](https://drive.google.com/file/d/1TV2PH9-ry8nHthV1G4pjRIoA3V9sNpAZ/view)** – NIIT, Gurgaon  
+  *(Advanced Java Development)*  
+- **[Personality Development](https://drive.google.com/file/d/1i2GjmM9y6SzXo2qW2yRFGwVXyEuLvFFF/view)** – Indo-American Society  
+  *(Public Speaking and Communication Skills)*  
+
+---
 <details>
   <summary>📊 GitHub Stats</summary>
 
