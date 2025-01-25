@@ -76,8 +76,10 @@ Here’s a collection of certifications I’ve earned to strengthen my knowledge
 ---
 
 ## 🌍 Let's Connect!
+- **E-mail**: [Harsh Patil](harshpatil05@gmail.com)  
 - **LinkedIn**: [Harsh Patil](https://www.linkedin.com/in/harshpatil05/)  
-- **GitHub**: [@harshpatil01](https://github.com/harshpatil01)  
+- **GitHub**: [@harshpatil01](https://github.com/harshpatil01)
+
 
 ---
 
