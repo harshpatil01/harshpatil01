@@ -1,6 +1,6 @@
 # Hi there, I'm Harsh Patil 👋  
 
-🚀 **Aspiring Supply Chain Specialist | Data Enthusiast | Lifelong Learner**
+**Supply Chain Specialist | Data Enthusiast | Embedded Systems**
 
 Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Supply Chain Management** at SRH University of Applied Sciences, Hamburg. With a strong foundation in **Data Science** and **Electronics & Telecommunications Engineering**, I am passionate about bridging technology and analytics to drive impactful solutions in the e-mobility and supply chain industries.
 
