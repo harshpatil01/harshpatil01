@@ -21,17 +21,15 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 ---
 
 ## 📌 Projects
-Here are some of my featured projects. Feel free to explore the repositories linked below!  
 
-1. **[Data Science Certification Projects](https://github.com/harshpatil01?tab=repositories)**  
-   - Implemented **Machine Learning Models** for predictive analytics.  
-   - Conducted **Exploratory Data Analysis (EDA)** for insights and decision-making.  
+| **Project Name**                  | **Description**                                                                                                  | **Repository Link**                                                                                 |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Data Science Projects**         | Implemented ML models for predictive analytics and performed EDA for insights and decision-making.               | [Repository](https://github.com/harshpatil01?tab=repositories)                                     |
+| **Embedded Systems Development**  | Built Linux-based systems for microcontrollers using C.                                                          | [Repository](https://github.com/harshpatil01?tab=repositories)                                     |
+| **Visualization Dashboards**      | Created interactive dashboards using Power BI to visualize business operations.                                  | [Repository](https://github.com/harshpatil01?tab=repositories)                                     |
 
-2. **[Embedded Systems Development](https://github.com/harshpatil01?tab=repositories)**  
-   - Built Linux-based systems for **microcontrollers** using C.  
 
-3. **[Visualization Dashboards](https://github.com/harshpatil01?tab=repositories)**  
-   - Created interactive **Power BI** dashboards for business operations.  
+
 
 ---
 
@@ -42,10 +40,13 @@ Here are some of my featured projects. Feel free to explore the repositories lin
 
 ---
 
-## 📊 GitHub Stats
-![Harsh's GitHub Stats](https://github-readme-stats.vercel.app/api?username=harshpatil01&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=harshpatil01&layout=compact&theme=radical)  
+<details>
+  <summary>📊 GitHub Stats</summary>
 
+  ![Harsh's GitHub Stats](https://github-readme-stats.vercel.app/api?username=harshpatil01&show_icons=true&theme=radical)  
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=harshpatil01&layout=compact&theme=radical)  
+
+</details>
 ---
 
 ## 🌍 Let's Connect!
