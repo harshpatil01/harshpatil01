@@ -1,4 +1,4 @@
-# Hi there, I'm Harsh Patil 👋  
+# Hello, My name is Harsh Patil
 
 **Supply Chain Specialist | Data Enthusiast | Embedded Systems**
 
