@@ -2,7 +2,7 @@
 
 **Supply Chain Specialist | Data Enthusiast | Embedded Systems**
 
-Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Supply Chain Management** at SRH University of Applied Sciences, Hamburg. With a strong foundation in **Data Science** and **Electronics & Telecommunications Engineering**, I am passionate about bridging technology and analytics to drive impactful solutions in the e-mobility and supply chain industries.
+Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Supply Chain Management** at SRH University of Applied Sciences, Hamburg. With a strong foundation in **Data Science** and **Electronics & Telecommunications Engineering**, I am passionate about bridging technology and analytics to drive impactful solutions in the supply chain industry.
 
 ---
 
@@ -25,8 +25,8 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 | **Project Name**                  | **Description**                                                                                                  | **Repository Link**                                                                                 |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | **Data Science Assignments**         | Implemented ML models for predictive analytics and performed EDA for insights and decision-making.               | [Repository](https://github.com/harshpatil01/Excel-R-Machine-Learning-and-Artificial-Intelligence)                                     |
-| **Customer_Personality_Analysis**         | This project analyzes customer behavior and spending patterns to segment customers into distinct groups.             | [Repository](https://github.com/harshpatil01/Customer_Personality_Analysis)                                     |
-| **Insurance_Premium_Analysis**         | This project is a comprehensive analysis and predictive modeling project aimed at forecasting insurance expenses based on personal attributes.          | [Repository](https://github.com/harshpatil01/Insurance_Premium_Analysis)                                     |
+| **Customer Personality Analysis**         | This project analyzes customer behavior and spending patterns to segment customers into distinct groups.             | [Repository](https://github.com/harshpatil01/Customer_Personality_Analysis)                                     |
+| **Insurance Premium Analysis**         | This project is a comprehensive analysis and predictive modeling project aimed at forecasting insurance expenses based on personal attributes.          | [Repository](https://github.com/harshpatil01/Insurance_Premium_Analysis)                                     |
 | **Operations Research with Machine Learning**         | Projects using the concepts of Operations Research and Machine Learning               | [Repository](https://github.com/harshpatil01/Operations_Research_with_Machine_Learning)                                     |
 | **Smart-ATS**         | Smart ATS is a web application that helps users improve their resumes by evaluating them against job descriptions using AI.              | [Repository](https://github.com/harshpatil01/Smart-ATS)                                     |
 | **Embedded Systems Assignments**  | Built Linux-based systems for microcontrollers using C.                                                          |    [Repository](https://github.com/harshpatil01/Emertxe-Assignments)                                   |
