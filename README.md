@@ -14,7 +14,7 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 ---
 
 ## 🔧 Technical Skills
-- **Programming**: Python | Java | C++  
+- **Programming**: Python | C | C++ | R
 - **Data Tools**: Tableau | MySQL | Power BI | SAP S/4HANA  
 - **Business Intelligence**: Data Visualization | Forecasting | Statistical Analysis  
 
