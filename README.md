@@ -5,12 +5,12 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 ---
 
 ## 👨‍💻 Work Experience and Internships
-- **Web Solutions Specialist** (Endurance International Group)  
+- **Web Solutions Specialist** (Endurance International Group)   (June 2020 - September 2020 
   - Resolved technical issues with Salesforce CRM to achieve 90% efficiency.  
   - Enhanced product reliability up to 85% through diligent troubleshooting.  
   - Tested and analyzed software to identify and fix bugs, improving overall performance.  
 
-- **Data Science Intern** (AI Variant)  
+- **Data Science Intern** (AI Variant)  (Juy 2024 - January 2025)
   - Refined expertise in **Python**, **Web Scraping**, **Text Mining**, **Data Preprocessing**, and **EDA**.  
   - Worked on **Machine Learning** and **Natural Language Processing (NLP)** projects.  
   - Deployed ML models and ensured end-to-end project implementation.  
