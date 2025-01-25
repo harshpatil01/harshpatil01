@@ -24,8 +24,8 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 
 | **Project Name**                  | **Description**                                                                                                  | **Repository Link**                                                                                 |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| **Data Science Projects**         | Implemented ML models for predictive analytics and performed EDA for insights and decision-making.               | [Repository](https://github.com/harshpatil01?tab=repositories)                                     |
-| **Embedded Systems Development**  | Built Linux-based systems for microcontrollers using C.                                                          | [Repository](https://github.com/harshpatil01?tab=repositories)                                     |
+| **Data Science Projects**         | Implemented ML models for predictive analytics and performed EDA for insights and decision-making.               | [Repository](https://github.com/harshpatil01/Excel-R-Machine-Learning-and-Artificial-Intelligence)                                     |
+| **Embedded Systems Development**  | Built Linux-based systems for microcontrollers using C.                                                          |    [Repository](https://github.com/harshpatil01/Emertxe-Assignments)                                   |
 | **Visualization Dashboards**      | Created interactive dashboards using Power BI to visualize business operations.                                  | [Repository](https://github.com/harshpatil01?tab=repositories)                                     |
 
 
