@@ -54,7 +54,7 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 ## 📜 Certifications
 Here’s a collection of certifications I’ve earned to strengthen my knowledge and skills:
 
-- **[Data Science Certification](https://www.excelr.com/data-science-certification)** – ExcelR Institute  
+- **[Data Science Certification](https://drive.google.com/file/d/1qGCsNKqiDRNugJUCoTfimetVJMeJttZT/view?usp=share_link)** – ExcelR Institute  
   *(Statistical Analysis, Machine Learning, Neural Networks, EDA, AI, and Big Data Tools)*  
 - **[Goethe-Zertifikat A1](https://drive.google.com/file/d/1Xk4YYolx0B8unx3Uw_bQ41TWLdQw9u_n/view)** – Goethe Institut  
   *(Basic German Language Proficiency)*  
