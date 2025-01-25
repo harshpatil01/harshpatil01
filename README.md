@@ -5,7 +5,7 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 ---
 
 ## 👨‍💻 Work Experience and Internships
-- **Web Solutions Specialist** (Endurance International Group)   (June 2020 - September 2020 
+- **Web Solutions Specialist** (Endurance International Group)   (June 2020 - September 2020)
   - Resolved technical issues with Salesforce CRM to achieve 90% efficiency.  
   - Enhanced product reliability up to 85% through diligent troubleshooting.  
   - Tested and analyzed software to identify and fix bugs, improving overall performance.  
