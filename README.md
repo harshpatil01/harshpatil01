@@ -29,15 +29,6 @@ Welcome to my GitHub profile! I'm currently pursuing a **Master of Science in Su
 | **Visualization Dashboards**      | Created interactive dashboards using Power BI to visualize business operations.                                  | [Repository](https://github.com/harshpatil01?tab=repositories)                                     |
 
 
-
-
----
-
-## 📜 Certifications
-- **Data Science Certification** (ExcelR Institute)  
-- **Goethe-Zertifikat A1** (German Language Proficiency)  
-- **Emertxe Certified Embedded Professional (ECEP)**  
-
 ---
 
 <details>
