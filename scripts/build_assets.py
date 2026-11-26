@@ -52,7 +52,7 @@ PROJECTS = [
         "kicker": "NLP · APPLIED ML",
         "title": "Sentiment Analysis of Customer Reviews",
         "desc": "NLP on 568k Amazon reviews, six models compared, Streamlit app",
-        "tech": "Python · TF-IDF · scikit-learn · XGBoost · Streamlit",
+        "tech": "Python · scikit-learn · XGBoost · Streamlit",
         "context": None,
     },
     {
@@ -60,7 +60,7 @@ PROJECTS = [
         "kicker": "SEGMENTATION",
         "title": "Customer Personality Analysis",
         "desc": "Customer segmentation with clustering for targeted marketing, Streamlit app",
-        "tech": "Python · pandas · scikit-learn · Streamlit",
+        "tech": "Python · scikit-learn · Streamlit",
         "context": "Internship · Ai Variant",
     },
     {
@@ -68,7 +68,7 @@ PROJECTS = [
         "kicker": "REGRESSION",
         "title": "Insurance Premium Analysis",
         "desc": "Regression models to predict medical costs, interactive dashboard",
-        "tech": "Python · pandas · scikit-learn · Streamlit",
+        "tech": "Python · scikit-learn · Streamlit",
         "context": "Internship · Ai Variant",
     },
     {
@@ -176,32 +176,30 @@ def banner(th):
         f'<rect x="64" y="72" width="44" height="5" rx="2.5" fill="{c["accent"]}"/>',
         t(64, 140, PROFILE["name"], 58, c["text"], 700, spacing="-1"),
         t(64, 186, PROFILE["role"], 28, c["accent"], 600),
-        t(64, 226, PROFILE["tagline"], 19, c["text"], 500),
-        t(64, 256, PROFILE["sub"], 16, c["muted"]),
+        t(64, 228, PROFILE["tagline"], 22, c["text"], 500),
+        t(64, 262, PROFILE["sub"], 18, c["muted"]),
     ]
 
-    # Flow motif: 4 nodes along a gentle diagonal, connected by arrows.
-    nodes = [(720, 96), (850, 150), (980, 96), (1080, 186)]
-    nw, nh = 104, 44
+    # Flow motif: four steps left to right, slightly staggered, with arrows.
+    nw, nh, gap = 104, 44, 30
+    x0 = W - 56 - (len(FLOW) * nw + (len(FLOW) - 1) * gap)
+    nodes = [(x0 + i * (nw + gap), 104 if i % 2 == 0 else 136) for i in range(len(FLOW))]
     for (x1, y1), (x2, y2) in zip(nodes, nodes[1:]):
-        sx, sy = x1 + nw, y1 + nh / 2
-        ex, ey = x2, y2 + nh / 2
-        mx = (sx + ex) / 2
-        parts.append(f'<path d="M{sx} {sy} C{mx} {sy}, {mx} {ey}, {ex - 6} {ey}" fill="none" '
-                     f'stroke="{c["accent2"]}" stroke-width="2" stroke-dasharray="5 5" opacity="0.8"/>')
-        parts.append(f'<path d="M{ex - 8} {ey - 5} L{ex} {ey} L{ex - 8} {ey + 5}" fill="none" '
-                     f'stroke="{c["accent2"]}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>')
+        sx, sy, ex, ey = x1 + nw + 4, y1 + nh / 2, x2 - 4, y2 + nh / 2
+        parts.append(f'<line x1="{sx}" y1="{sy}" x2="{ex - 2}" y2="{ey}" stroke="{c["accent2"]}" '
+                     f'stroke-width="2" stroke-dasharray="4 4"/>')
+        parts.append(f'<circle cx="{ex}" cy="{ey}" r="3.5" fill="{c["accent2"]}"/>')
     for i, ((x, y), label) in enumerate(zip(nodes, FLOW)):
-        x = min(x, W - nw - 16)
+        last = i == len(FLOW) - 1
         parts.append(f'<rect x="{x}" y="{y}" width="{nw}" height="{nh}" rx="10" fill="{c["node"]}" '
-                     f'stroke="{c["accent"] if i == len(FLOW) - 1 else c["border"]}" stroke-width="1.5"/>')
+                     f'stroke="{c["accent"] if last else c["border"]}" stroke-width="1.5"/>')
         parts.append(f'<circle cx="{x + 18}" cy="{y + nh / 2}" r="5" fill="{c["accent"]}"/>')
         parts.append(t(x + 30, y + nh / 2 + 5, label, 15, c["text"], 600))
-    # tiny bar chart under the "Report" node
-    bx, by = 1080 - 0, 186 + nh + 14
-    bx = min(bx, W - nw - 16)
-    for j, hgt in enumerate([14, 22, 18, 30, 26]):
-        parts.append(f'<rect x="{bx + 14 + j * 16}" y="{by + 32 - hgt}" width="10" height="{hgt}" rx="2" '
+    # small bar chart under the last step ("Report")
+    lx, ly = nodes[-1]
+    base = ly + nh + 62
+    for j, hgt in enumerate([16, 26, 20, 36, 30]):
+        parts.append(f'<rect x="{lx + 14 + j * 16}" y="{base - hgt}" width="10" height="{hgt}" rx="2" '
                      f'fill="{c["accent"]}" opacity="{0.45 + j * 0.11:.2f}"/>')
     return svg(W, H, "".join(parts), f'{PROFILE["name"]}: {PROFILE["role"]}')
 
@@ -210,20 +208,20 @@ def banner(th):
 
 def stack(th):
     c = THEMES[th]
-    W, H = 1200, 250
+    W, H = 1200, 296
     colw, gap = 376, 36
     parts = []
     for ci, (group, tools) in enumerate(STACK):
         x0 = ci * (colw + gap)
         parts.append(f'<rect x="{x0 + 0.5}" y="0.5" width="{colw - 1}" height="{H - 1}" rx="14" '
                      f'fill="{c["card"]}" stroke="{c["border"]}"/>')
-        parts.append(t(x0 + 24, 40, group.upper(), 14, c["accent"], 700, spacing="1.5"))
+        parts.append(t(x0 + 24, 42, group.upper(), 16, c["accent"], 700, spacing="1.5"))
         for ti, (mono, name, color) in enumerate(tools):
-            y = 60 + ti * 46
-            parts.append(f'<rect x="{x0 + 24}" y="{y}" width="34" height="34" rx="8" fill="{color}"/>')
-            fs = 13 if len(mono) <= 2 else 11
-            parts.append(t(x0 + 41, y + 22, mono, fs, "#FFFFFF", 700, anchor="middle"))
-            parts.append(t(x0 + 72, y + 23, name, 17, c["text"], 500))
+            y = 64 + ti * 56
+            parts.append(f'<rect x="{x0 + 24}" y="{y}" width="42" height="42" rx="10" fill="{color}"/>')
+            fs = 16 if len(mono) <= 2 else 13
+            parts.append(t(x0 + 45, y + 27, mono, fs, "#FFFFFF", 700, anchor="middle"))
+            parts.append(t(x0 + 82, y + 28, name, 21, c["text"], 500))
     return svg(W, H, "".join(parts), "Tools: " + "; ".join(
         f'{g}: ' + ", ".join(n for _, n, _ in tl) for g, tl in STACK))
 
@@ -232,31 +230,30 @@ def stack(th):
 
 def card(p, th):
     c = THEMES[th]
-    W, H, pad = 600, 230, 28
+    W, H, pad = 520, 236, 26
     inner = W - 2 * pad
     parts = [
         f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="14" fill="{c["card"]}" stroke="{c["border"]}"/>',
         f'<rect x="0.5" y="0.5" width="6" height="{H - 1}" rx="3" fill="{c["accent"]}"/>',
-        t(pad, 44, p["kicker"], 13, c["accent"], 700, spacing="1.5"),
+        t(pad, 42, p["kicker"], 14, c["accent"], 700, spacing="1.5"),
     ]
-    title_lines = wrap(p["title"], 25, inner, bold=True)[:2]
-    y = 80
-    for line in title_lines:
+    if p["context"]:  # context label, top right
+        pw = text_width(p["context"], 14, True) + 26
+        px = W - pad - pw
+        parts.append(f'<rect x="{px:.0f}" y="22" width="{pw:.0f}" height="28" rx="14" fill="{c["pill"]}"/>')
+        parts.append(t(f"{px + pw / 2:.0f}", 41, p["context"], 14, c["pilltext"], 700, anchor="middle"))
+    y = 82
+    for line in wrap(p["title"], 25, inner, bold=True)[:2]:
         parts.append(t(pad, y, line, 25, c["text"], 700))
         y += 32
     y += 2
-    for line in wrap(p["desc"], 17, inner)[:2]:
-        parts.append(t(pad, y, line, 17, c["muted"]))
-        y += 25
-    # footer: tech on the left, context pill on the right
-    fy = H - 30
-    parts.append(t(pad, fy, p["tech"], 14, c["muted"], 500))
-    if p["context"]:
-        pw = text_width(p["context"], 13, True) + 24
-        px = W - pad - pw
-        parts.append(f'<rect x="{px:.0f}" y="{fy - 50}" width="{pw:.0f}" height="26" rx="13" fill="{c["pill"]}"/>')
-        parts.append(t(f"{px + pw / 2:.0f}", fy - 32, p["context"], 13, c["pilltext"], 700, anchor="middle"))
-    parts.append(t(W - pad, 44, "View repo →", 14, c["accent2"], 600, anchor="end"))
+    for line in wrap(p["desc"], 18, inner)[:2]:
+        parts.append(t(pad, y, line, 18, c["muted"]))
+        y += 26
+    fy = H - 26  # footer: tech left, link right
+    parts.append(f'<line x1="{pad}" y1="{fy - 26}" x2="{W - pad}" y2="{fy - 26}" stroke="{c["border"]}"/>')
+    parts.append(t(pad, fy, p["tech"], 15, c["muted"], 500))
+    parts.append(t(W - pad, fy, "View repo →", 15, c["accent2"], 600, anchor="end"))
     return svg(W, H, "".join(parts), f'{p["title"]}: {p["desc"]}')
 
 
