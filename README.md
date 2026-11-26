@@ -1,79 +1,56 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Harsh Patil: Operations, Data & Automation. Ad operations and supply chain analytics. Power Platform, Python, SQL, Power BI.">
+  <img src="assets/banner-light.svg" alt="Harsh Patil: Operations, Data & Automation. Focus: Ad Operations, Supply Chain Analytics.">
 </picture>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/harshpatil05/">LinkedIn</a> ·
-  <a href="mailto:harshpatil05@gmail.com">Email</a> ·
+  <a href="https://www.linkedin.com/in/harshpatil05/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:harshpatil05@gmail.com">Email</a> &nbsp;·&nbsp;
   Hamburg, Germany
 </p>
 
-## About me
+## Profile
 
-I work at the intersection of **business operations, data and automation**, across two areas:
+I work at the intersection of business operations, data and automation, in two areas: **digital advertising operations**, where I built Power Platform automations for campaign operations at RTL AdAlliance, and **supply chain and operations analytics**, the focus of my M.Sc. in Supply Chain Management.
 
-- **Digital advertising operations.** At RTL AdAlliance I built Power Platform automations for campaign operations.
-- **Supply chain and operations analytics.** My M.Sc. in Supply Chain Management covered this, including optimisation models such as inventory planning with linear programming.
+## Experience
 
-**Background**
+**Working Student, Digital Demand Operations** · RTL AdAlliance, Hamburg · Mar 2025 – Apr 2026<br>
+Built Power Platform automations for campaign operations.
 
-- **M.Sc. Supply Chain Management**, SRH University of Applied Sciences Hamburg (2026). Thesis: *AI-Driven Automation in Digital Advertising Operations*
-- **Working Student, Digital Demand Operations**, RTL AdAlliance, Hamburg (Mar 2025 – Apr 2026): built Power Platform automations for campaign operations
-- **Data Science Intern**, Ai Variant (Jul 2024 – Jan 2025): machine learning and analytics projects with Python and Streamlit
+**Data Science Intern** · Ai Variant · Jul 2024 – Jan 2025<br>
+Machine learning and analytics projects with Python and Streamlit.
 
-## What I build
+## Education
 
-| Workflow automation | Data analysis & dashboards | Applied machine learning | Supply chain analytics |
-|---|---|---|---|
-| Power Automate, Power Apps, SharePoint and Python scripts that remove manual steps | Python, SQL and Power BI, from raw data to a clear answer | Classification, segmentation and NLP, evaluated honestly | Optimisation and KPI analysis in Python, from my M.Sc. coursework |
+**M.Sc. Supply Chain Management** · SRH University of Applied Sciences Hamburg · 2026<br>
+Thesis: *AI-Driven Automation in Digital Advertising Operations*
 
-## Featured projects
+**B.E. Electronics and Telecommunication Engineering** · St. Francis Institute of Technology, Mumbai · 2016–2020
 
-<p>
-<a href="https://github.com/harshpatil01/Inventory-Optimization-LP"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-inventory-lp-dark.svg">
-  <img src="assets/card-inventory-lp-light.svg" alt="Optimal Inventory Control: linear programming for inventory decisions (SRH University coursework)" width="49%">
-</picture></a>
-<a href="https://github.com/harshpatil01/Customer_Personality_Analysis"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-customer-personality-dark.svg">
-  <img src="assets/card-customer-personality-light.svg" alt="Customer Personality Analysis: customer segmentation with clustering, Streamlit app (Ai Variant internship)" width="49%">
-</picture></a>
-</p>
-<p>
-<a href="https://github.com/harshpatil01/Sentiment-Analysis-Project"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-sentiment-dark.svg">
-  <img src="assets/card-sentiment-light.svg" alt="Sentiment Analysis of Customer Reviews: NLP on 568k Amazon reviews, six models compared, Streamlit app (Ai Variant internship)" width="49%">
-</picture></a>
-<a href="https://github.com/harshpatil01/Insurance_Premium_Analysis"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-insurance-dark.svg">
-  <img src="assets/card-insurance-light.svg" alt="Insurance Premium Analysis: regression models to predict medical costs, interactive dashboard (Ai Variant internship)" width="49%">
-</picture></a>
-</p>
-<p>
-<a href="https://github.com/harshpatil01/Smart-ATS"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-smart-ats-dark.svg">
-  <img src="assets/card-smart-ats-light.svg" alt="Smart ATS: LLM-based resume vs. job description checker built with Streamlit and the OpenAI API (personal project)" width="49%">
-</picture></a>
-</p>
+## Selected projects
 
-<sub>Earlier work: C and embedded systems projects from my Emertxe training ([Emertxe-Assignments](https://github.com/harshpatil01/Emertxe-Assignments)) and ExcelR data science coursework ([ExcelR assignments](https://github.com/harshpatil01/Excel-R-Machine-Learning-and-Artificial-Intelligence)).</sub>
+| Project | Summary | Context |
+|---|---|---|
+| [Optimal Inventory Control](https://github.com/harshpatil01/Inventory-Optimization-LP) | Linear programming model for inventory decisions (Python) | M.Sc. coursework, SRH |
+| [Customer Personality Analysis](https://github.com/harshpatil01/Customer_Personality_Analysis) | Customer segmentation with clustering for targeted marketing; Streamlit app | Internship, Ai Variant |
+| [Sentiment Analysis of Customer Reviews](https://github.com/harshpatil01/Sentiment-Analysis-Project) | NLP on 568k Amazon reviews, six models compared; Streamlit app | Internship, Ai Variant |
+| [Insurance Premium Analysis](https://github.com/harshpatil01/Insurance_Premium_Analysis) | Regression models to predict medical costs; interactive dashboard | Internship, Ai Variant |
+| [Smart ATS](https://github.com/harshpatil01/Smart-ATS) | Resume vs. job description checker using an LLM (OpenAI API, Streamlit) | Personal project |
 
-## Tools
+Earlier work: C and embedded systems training projects ([Emertxe-Assignments](https://github.com/harshpatil01/Emertxe-Assignments)) and ExcelR data science coursework ([ExcelR assignments](https://github.com/harshpatil01/Excel-R-Machine-Learning-and-Artificial-Intelligence)).
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img src="assets/stack-light.svg" alt="Automation: Power Automate, Power Apps, SharePoint, Microsoft 365. Data: Python, SQL, Power BI, Excel. ML and other: pandas, scikit-learn, Streamlit, SAP S/4HANA, C.">
-</picture>
+## Skills
+
+| Area | Tools |
+|---|---|
+| Workflow automation | Power Automate, Power Apps, SharePoint, Microsoft 365 |
+| Data and reporting | Python (pandas), SQL, Power BI, Excel |
+| Machine learning | scikit-learn, XGBoost, Streamlit |
+| Enterprise systems | SAP S/4HANA |
 
 ## Certifications
 
 - [Data Science](https://drive.google.com/file/d/1qGCsNKqiDRNugJUCoTfimetVJMeJttZT/view?usp=share_link), ExcelR (2024)
 - [Emertxe Certified Embedded Professional (ECEP)](https://certificate.emertxe.com/?id=21014_020), Emertxe
 - [Goethe-Zertifikat A1](https://drive.google.com/file/d/1Xk4YYolx0B8unx3Uw_bQ41TWLdQw9u_n/view), Goethe-Institut
-
-## Contact
-
-[LinkedIn](https://www.linkedin.com/in/harshpatil05/) · [Email](mailto:harshpatil05@gmail.com)
-
-<sub>Banner, cards and tool graphics are plain SVGs generated by [`scripts/build_assets.py`](scripts/build_assets.py).</sub>
