@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Harsh Patil: Operations, Data & Automation. Focus: Ad Operations, Supply Chain Analytics.">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" alt="Harsh Patil: Operations, Data & Automation. Focus: Ad Operations, Supply Chain Analytics.">
 </picture>
 
 <p align="center">

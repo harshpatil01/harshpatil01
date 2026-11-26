@@ -1,6 +1,6 @@
 """Build the SVG images used in the profile README.
 
-  assets/banner-{light,dark}.svg            slim navy header
+  assets/header-{light,dark}.svg            slim navy header
   assets/card-<slug>-{light,dark}.svg       one card per selected project
 
 GitHub shows the light or dark file to match the viewer's theme.
@@ -18,7 +18,6 @@ PROFILE = {
     "name": "Harsh Patil",
     "role": "Operations, Data & Automation",
     "areas": ["Ad Operations", "Supply Chain Analytics"],
-    "tools": "Power Platform  ·  Python  ·  SQL  ·  Power BI",
 }
 
 PROJECTS = [
@@ -98,10 +97,9 @@ def banner(th):
         text(64, 92, p["name"], 50, b["name"], 600, spacing="-0.5"),
         text(64, 132, p["role"], 22, b["role"], 400, spacing="0.3"),
         f'<rect x="64" y="152" width="36" height="2" fill="{b["role"]}"/>',
-        text(W - 64, 70, "FOCUS", 13, b["muted"], 600, "end", spacing="2"),
-        text(W - 64, 100, p["areas"][0], 21, b["name"], 400, "end"),
-        text(W - 64, 128, p["areas"][1], 21, b["name"], 400, "end"),
-        text(W - 64, 160, p["tools"], 15, b["muted"], 400, "end"),
+        text(W - 64, 80, "FOCUS", 13, b["muted"], 600, "end", spacing="2"),
+        text(W - 64, 112, p["areas"][0], 21, b["name"], 400, "end"),
+        text(W - 64, 140, p["areas"][1], 21, b["name"], 400, "end"),
     ]
     return svg(W, H, "".join(parts), f'{p["name"]}: {p["role"]}. Focus: ' + ", ".join(p["areas"]) + ".")
 
@@ -131,7 +129,7 @@ if __name__ == "__main__":
     for f in OUT.glob("*.svg"):
         f.unlink()
     for th in THEMES:
-        (OUT / f"banner-{th}.svg").write_text(banner(th), encoding="utf-8")
+        (OUT / f"header-{th}.svg").write_text(banner(th), encoding="utf-8")
         for p in PROJECTS:
             (OUT / f'card-{p["slug"]}-{th}.svg').write_text(card(p, th), encoding="utf-8")
     print("Wrote", len(list(OUT.glob("*.svg"))), "SVG files to", OUT)
