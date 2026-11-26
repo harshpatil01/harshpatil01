@@ -124,12 +124,37 @@ def card(p, th):
     return svg(W, H, "".join(parts), f'{p["title"]}: {p["desc"]} ({p["context"]})')
 
 
+# Small monochrome icons for the contact line (16x16).
+ICON_COLOURS = {"light": ("#57606A", "#FFFFFF"), "dark": ("#9198A1", "#0D1117")}
+ICONS = {
+    "linkedin": lambda fg, bg: (
+        f'<rect x="1.5" y="1.5" width="13" height="13" rx="2.5" fill="{fg}"/>'
+        f'<circle cx="5.1" cy="4.9" r="1.2" fill="{bg}"/>'
+        f'<rect x="4.1" y="6.6" width="2" height="5.6" fill="{bg}"/>'
+        f'<path d="M7.6 6.6h1.9v.8c.4-.6 1-.95 1.8-.95 1.3 0 2 .85 2 2.4v3.35h-2V9.1c0-.7-.3-1.05-.85-1.05-.6 0-.9.4-.9 1.05v3.1h-1.95z" fill="{bg}"/>'),
+    "email": lambda fg, bg: (
+        f'<rect x="1.75" y="3.25" width="12.5" height="9.5" rx="1.5" fill="none" stroke="{fg}" stroke-width="1.5"/>'
+        f'<path d="M2.5 4.5 8 8.75 13.5 4.5" fill="none" stroke="{fg}" stroke-width="1.5" stroke-linejoin="round"/>'),
+    "location": lambda fg, bg: (
+        f'<path d="M8 1.25a4.75 4.75 0 0 0-4.75 4.75c0 3.6 4.75 8.75 4.75 8.75s4.75-5.15 4.75-8.75A4.75 4.75 0 0 0 8 1.25z" fill="{fg}"/>'
+        f'<circle cx="8" cy="6" r="1.8" fill="{bg}"/>'),
+}
+
+
+def icon(name, th):
+    fg, bg = ICON_COLOURS[th]
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" '
+            f'aria-hidden="true">{ICONS[name](fg, bg)}</svg>\n')
+
+
 if __name__ == "__main__":
     OUT.mkdir(exist_ok=True)
     for f in OUT.glob("*.svg"):
         f.unlink()
     for th in THEMES:
         (OUT / f"header-{th}.svg").write_text(banner(th), encoding="utf-8")
+        for name in ICONS:
+            (OUT / f"icon-{name}-{th}.svg").write_text(icon(name, th), encoding="utf-8")
         for p in PROJECTS:
             (OUT / f'card-{p["slug"]}-{th}.svg').write_text(card(p, th), encoding="utf-8")
     print("Wrote", len(list(OUT.glob("*.svg"))), "SVG files to", OUT)
