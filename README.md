@@ -27,9 +27,9 @@ I work at the intersection of **business operations, data and automation**. I us
 Earlier work: C and embedded systems projects from my Emertxe training ([Emertxe-Assignments](https://github.com/harshpatil01/Emertxe-Assignments)) and ExcelR data science coursework ([ExcelR assignments](https://github.com/harshpatil01/Excel-R-Machine-Learning-and-Artificial-Intelligence)).
 
 ### Tools
-**Automation:** Power Automate · Power Apps · SharePoint · Microsoft 365
-**Data:** Python (pandas, scikit-learn) · SQL · Power BI · Excel
-**Other:** SAP S/4HANA · Streamlit · C
+- **Automation:** Power Automate · Power Apps · SharePoint · Microsoft 365
+- **Data:** Python (pandas, scikit-learn) · SQL · Power BI · Excel
+- **Other:** SAP S/4HANA · Streamlit · C
 
 ### Certifications
 - [Data Science](https://drive.google.com/file/d/1qGCsNKqiDRNugJUCoTfimetVJMeJttZT/view?usp=share_link), ExcelR (2024)
