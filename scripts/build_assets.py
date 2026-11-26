@@ -230,7 +230,7 @@ def stack(th):
 
 def card(p, th):
     c = THEMES[th]
-    W, H, pad = 520, 236, 26
+    W, H, pad = 520, 248, 26
     inner = W - 2 * pad
     parts = [
         f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="14" fill="{c["card"]}" stroke="{c["border"]}"/>',
