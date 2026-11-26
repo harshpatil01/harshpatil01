@@ -21,7 +21,7 @@ I work at the intersection of **business operations, data and automation**. I us
 | [Sentiment Analysis of Customer Reviews](https://github.com/harshpatil01/Sentiment-Analysis-Project) | NLP on 568k Amazon reviews, six models compared, Streamlit app |
 | [Customer Personality Analysis](https://github.com/harshpatil01/Customer_Personality_Analysis) | Customer segmentation with clustering for targeted marketing, Streamlit app |
 | [Insurance Premium Analysis](https://github.com/harshpatil01/Insurance_Premium_Analysis) | Regression models to predict medical costs, interactive dashboard |
-| [Optimal Inventory Control](https://github.com/harshpatil01/Operations_Research_with_Machine_Learning) | Linear programming for inventory decisions (SRH University coursework) |
+| [Optimal Inventory Control](https://github.com/harshpatil01/Inventory-Optimization-LP) | Linear programming for inventory decisions (SRH University coursework) |
 | [Smart ATS](https://github.com/harshpatil01/Smart-ATS) | LLM-based resume vs. job description checker built with Streamlit and the OpenAI API |
 
 Earlier work: C and embedded systems projects from my Emertxe training ([Emertxe-Assignments](https://github.com/harshpatil01/Emertxe-Assignments)) and ExcelR data science coursework ([ExcelR assignments](https://github.com/harshpatil01/Excel-R-Machine-Learning-and-Artificial-Intelligence)).
