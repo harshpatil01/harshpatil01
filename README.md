@@ -26,17 +26,36 @@ Machine learning and analytics projects with Python and Streamlit.
 **M.Sc. Supply Chain Management** · SRH University of Applied Sciences Hamburg · 2026<br>
 Thesis: *AI-Driven Automation in Digital Advertising Operations*
 
-**B.E. Electronics and Telecommunication Engineering** · St. Francis Institute of Technology, Mumbai · 2016–2020
+**B.E. Electronics & Telecommunication Engineering** · St. Francis Institute of Technology, Mumbai · 2016–2020
 
 ## Selected projects
 
-| Project | Summary | Context |
-|---|---|---|
-| [Optimal Inventory Control](https://github.com/harshpatil01/Inventory-Optimization-LP) | Linear programming model for inventory decisions (Python) | M.Sc. coursework, SRH |
-| [Customer Personality Analysis](https://github.com/harshpatil01/Customer_Personality_Analysis) | Customer segmentation with clustering for targeted marketing; Streamlit app | Internship, Ai Variant |
-| [Sentiment Analysis of Customer Reviews](https://github.com/harshpatil01/Sentiment-Analysis-Project) | NLP on 568k Amazon reviews, six models compared; Streamlit app | Internship, Ai Variant |
-| [Insurance Premium Analysis](https://github.com/harshpatil01/Insurance_Premium_Analysis) | Regression models to predict medical costs; interactive dashboard | Internship, Ai Variant |
-| [Smart ATS](https://github.com/harshpatil01/Smart-ATS) | Resume vs. job description checker using an LLM (OpenAI API, Streamlit) | Personal project |
+<p>
+<a href="https://github.com/harshpatil01/Inventory-Optimization-LP"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-inventory-lp-dark.svg">
+  <img src="assets/card-inventory-lp-light.svg" alt="Optimal Inventory Control: linear programming model for inventory decisions (M.Sc. coursework, SRH)" width="49%">
+</picture></a>
+<a href="https://github.com/harshpatil01/Customer_Personality_Analysis"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-customer-personality-dark.svg">
+  <img src="assets/card-customer-personality-light.svg" alt="Customer Personality Analysis: customer segmentation with clustering (Internship, Ai Variant)" width="49%">
+</picture></a>
+</p>
+<p>
+<a href="https://github.com/harshpatil01/Sentiment-Analysis-Project"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-sentiment-dark.svg">
+  <img src="assets/card-sentiment-light.svg" alt="Sentiment Analysis of Customer Reviews: NLP on 568k Amazon reviews (Internship, Ai Variant)" width="49%">
+</picture></a>
+<a href="https://github.com/harshpatil01/Insurance_Premium_Analysis"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-insurance-dark.svg">
+  <img src="assets/card-insurance-light.svg" alt="Insurance Premium Analysis: regression models to predict medical costs (Internship, Ai Variant)" width="49%">
+</picture></a>
+</p>
+<p>
+<a href="https://github.com/harshpatil01/Smart-ATS"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-smart-ats-dark.svg">
+  <img src="assets/card-smart-ats-light.svg" alt="Smart ATS: resume vs. job description checker using an LLM (Personal project)" width="49%">
+</picture></a>
+</p>
 
 Earlier work: C and embedded systems training projects ([Emertxe-Assignments](https://github.com/harshpatil01/Emertxe-Assignments)) and ExcelR data science coursework ([ExcelR assignments](https://github.com/harshpatil01/Excel-R-Machine-Learning-and-Artificial-Intelligence)).
 
