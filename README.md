@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Harsh Patil: Operations, Data & Automation. Power Platform, Python, SQL, Power BI.">
+  <img src="assets/banner-light.svg" alt="Harsh Patil: Operations, Data & Automation. Ad operations and supply chain analytics. Power Platform, Python, SQL, Power BI.">
 </picture>
 
 <p align="center">
@@ -11,24 +11,29 @@
 
 ## About me
 
-I work at the intersection of **business operations, data and automation**. I use Power Platform, Python, SQL and Power BI to make operational work faster, cleaner and easier to report on, with a particular interest in **digital advertising operations** and practical uses of AI.
+I work at the intersection of **business operations, data and automation**, across two areas:
 
-- 🎓 **M.Sc. Supply Chain Management**, SRH University of Applied Sciences Hamburg (2026). Thesis: *AI-Driven Automation in Digital Advertising Operations*
-- 💼 **Working Student, Digital Demand Operations**, RTL AdAlliance, Hamburg (Mar 2025 – Apr 2026): built Power Platform automations for campaign operations
-- 📊 **Data Science Intern**, Ai Variant (Jul 2024 – Jan 2025): machine learning and analytics projects with Python and Streamlit
+- **Digital advertising operations.** At RTL AdAlliance I built Power Platform automations for campaign operations.
+- **Supply chain and operations analytics.** My M.Sc. in Supply Chain Management covered this, including optimisation models such as inventory planning with linear programming.
+
+**Background**
+
+- **M.Sc. Supply Chain Management**, SRH University of Applied Sciences Hamburg (2026). Thesis: *AI-Driven Automation in Digital Advertising Operations*
+- **Working Student, Digital Demand Operations**, RTL AdAlliance, Hamburg (Mar 2025 – Apr 2026): built Power Platform automations for campaign operations
+- **Data Science Intern**, Ai Variant (Jul 2024 – Jan 2025): machine learning and analytics projects with Python and Streamlit
 
 ## What I build
 
-| ⚙️ Workflow automation | 📈 Data analysis & dashboards | 🤖 Applied machine learning |
-|---|---|---|
-| Power Automate, Power Apps, SharePoint and Python scripts that remove manual steps | Python, SQL and Power BI, from raw data to a clear answer | Classification, segmentation and NLP, evaluated honestly |
+| Workflow automation | Data analysis & dashboards | Applied machine learning | Supply chain analytics |
+|---|---|---|---|
+| Power Automate, Power Apps, SharePoint and Python scripts that remove manual steps | Python, SQL and Power BI, from raw data to a clear answer | Classification, segmentation and NLP, evaluated honestly | Optimisation and KPI analysis in Python, from my M.Sc. coursework |
 
 ## Featured projects
 
 <p>
-<a href="https://github.com/harshpatil01/Sentiment-Analysis-Project"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-sentiment-dark.svg">
-  <img src="assets/card-sentiment-light.svg" alt="Sentiment Analysis of Customer Reviews: NLP on 568k Amazon reviews, six models compared, Streamlit app (Ai Variant internship)" width="49%">
+<a href="https://github.com/harshpatil01/Inventory-Optimization-LP"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-inventory-lp-dark.svg">
+  <img src="assets/card-inventory-lp-light.svg" alt="Optimal Inventory Control: linear programming for inventory decisions (SRH University coursework)" width="49%">
 </picture></a>
 <a href="https://github.com/harshpatil01/Customer_Personality_Analysis"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-customer-personality-dark.svg">
@@ -36,13 +41,13 @@ I work at the intersection of **business operations, data and automation**. I us
 </picture></a>
 </p>
 <p>
+<a href="https://github.com/harshpatil01/Sentiment-Analysis-Project"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-sentiment-dark.svg">
+  <img src="assets/card-sentiment-light.svg" alt="Sentiment Analysis of Customer Reviews: NLP on 568k Amazon reviews, six models compared, Streamlit app (Ai Variant internship)" width="49%">
+</picture></a>
 <a href="https://github.com/harshpatil01/Insurance_Premium_Analysis"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-insurance-dark.svg">
   <img src="assets/card-insurance-light.svg" alt="Insurance Premium Analysis: regression models to predict medical costs, interactive dashboard (Ai Variant internship)" width="49%">
-</picture></a>
-<a href="https://github.com/harshpatil01/Inventory-Optimization-LP"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-inventory-lp-dark.svg">
-  <img src="assets/card-inventory-lp-light.svg" alt="Optimal Inventory Control: linear programming for inventory decisions (SRH University coursework)" width="49%">
 </picture></a>
 </p>
 <p>
