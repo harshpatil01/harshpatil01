@@ -1,12 +1,14 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Harsh Patil: Operations, Data & Automation. Focus: Ad Operations, Supply Chain Analytics.">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" alt="Harsh Patil: Operations, Data & Automation. Focus: Ad Operations, Supply Chain Analytics.">
 </picture>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/harshpatil05/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="mailto:harshpatil05@gmail.com">Email</a> &nbsp;·&nbsp;
-  Hamburg, Germany
+  <a href="https://www.linkedin.com/in/harshpatil05/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-linkedin-dark.svg"><img src="assets/icon-linkedin-light.svg" height="14" alt=""></picture>&nbsp;LinkedIn</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="mailto:harshpatil05@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-email-dark.svg"><img src="assets/icon-email-light.svg" height="14" alt=""></picture>&nbsp;Email</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-location-dark.svg"><img src="assets/icon-location-light.svg" height="14" alt=""></picture>&nbsp;Hamburg, Germany
 </p>
 
 ## Profile
