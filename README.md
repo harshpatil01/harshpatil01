@@ -28,7 +28,7 @@ I work at the intersection of **business operations, data and automation**. I us
 <p>
 <a href="https://github.com/harshpatil01/Sentiment-Analysis-Project"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-sentiment-dark.svg">
-  <img src="assets/card-sentiment-light.svg" alt="Sentiment Analysis of Customer Reviews: NLP on 568k Amazon reviews, six models compared, Streamlit app" width="49%">
+  <img src="assets/card-sentiment-light.svg" alt="Sentiment Analysis of Customer Reviews: NLP on 568k Amazon reviews, six models compared, Streamlit app (Ai Variant internship)" width="49%">
 </picture></a>
 <a href="https://github.com/harshpatil01/Customer_Personality_Analysis"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-customer-personality-dark.svg">
@@ -48,7 +48,7 @@ I work at the intersection of **business operations, data and automation**. I us
 <p>
 <a href="https://github.com/harshpatil01/Smart-ATS"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-smart-ats-dark.svg">
-  <img src="assets/card-smart-ats-light.svg" alt="Smart ATS: LLM-based resume vs. job description checker built with Streamlit and the OpenAI API" width="49%">
+  <img src="assets/card-smart-ats-light.svg" alt="Smart ATS: LLM-based resume vs. job description checker built with Streamlit and the OpenAI API (personal project)" width="49%">
 </picture></a>
 </p>
 

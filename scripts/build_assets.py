@@ -53,7 +53,7 @@ PROJECTS = [
         "title": "Sentiment Analysis of Customer Reviews",
         "desc": "NLP on 568k Amazon reviews, six models compared, Streamlit app",
         "tech": "Python · scikit-learn · XGBoost · Streamlit",
-        "context": None,
+        "context": "Internship · Ai Variant",
     },
     {
         "slug": "customer-personality",
@@ -85,7 +85,7 @@ PROJECTS = [
         "title": "Smart ATS",
         "desc": "LLM-based resume vs. job description checker built with Streamlit and the OpenAI API",
         "tech": "Python · OpenAI API · Streamlit",
-        "context": None,
+        "context": "Personal project",
     },
 ]
 
