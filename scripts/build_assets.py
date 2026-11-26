@@ -25,35 +25,38 @@ PROFILE = {
     "name": "Harsh Patil",
     "role": "Operations, Data & Automation",
     "tagline": "Power Platform · Python · SQL · Power BI",
-    "sub": "Ad ops & applied AI  ·  M.Sc. SRH Hamburg  ·  Hamburg, Germany",
+    "sub": "Ad ops automation  ·  Supply chain analytics  ·  M.Sc. SCM  ·  Hamburg",
 }
 
-# Flow shown on the right of the banner: what I do, in four steps.
-FLOW = ["Data", "Automate", "Analyse", "Report"]
+# The two tracks shown on the right of the banner.
+TRACKS = [
+    ("AD OPERATIONS", "Campaign workflow automation", "Power Automate · Power Apps · SharePoint"),
+    ("SUPPLY CHAIN", "Operations & inventory analytics", "Python · linear programming · M.Sc. SCM"),
+]
 
 STACK = [
-    ("Automation", [("PA", "Power Automate", "#0066FF"),
-                    ("PP", "Power Apps", "#742774"),
-                    ("SP", "SharePoint", "#038387"),
-                    ("365", "Microsoft 365", "#D83B01")]),
-    ("Data", [("Py", "Python", "#3776AB"),
-              ("SQL", "SQL", "#336791"),
-              ("BI", "Power BI", "#C9A100"),
-              ("XL", "Excel", "#217346")]),
-    ("ML & other", [("ML", "pandas · scikit-learn", "#150458"),
-                    ("St", "Streamlit", "#E0393E"),
-                    ("SAP", "SAP S/4HANA", "#0070F2"),
-                    ("C", "C", "#5C6BC0")]),
+    ("Automation", [("PA", "Power Automate"),
+                    ("PP", "Power Apps"),
+                    ("SP", "SharePoint"),
+                    ("365", "Microsoft 365")]),
+    ("Data", [("Py", "Python"),
+              ("SQL", "SQL"),
+              ("BI", "Power BI"),
+              ("XL", "Excel")]),
+    ("ML & other", [("ML", "pandas · scikit-learn"),
+                    ("St", "Streamlit"),
+                    ("SAP", "SAP S/4HANA"),
+                    ("C", "C")]),
 ]
 
 PROJECTS = [
     {
-        "slug": "sentiment",
-        "kicker": "NLP · APPLIED ML",
-        "title": "Sentiment Analysis of Customer Reviews",
-        "desc": "NLP on 568k Amazon reviews, six models compared, Streamlit app",
-        "tech": "Python · scikit-learn · XGBoost · Streamlit",
-        "context": "Internship · Ai Variant",
+        "slug": "inventory-lp",
+        "kicker": "SUPPLY CHAIN",
+        "title": "Optimal Inventory Control",
+        "desc": "Linear programming for inventory decisions",
+        "tech": "Python · linear programming",
+        "context": "Coursework · SRH University",
     },
     {
         "slug": "customer-personality",
@@ -64,20 +67,20 @@ PROJECTS = [
         "context": "Internship · Ai Variant",
     },
     {
+        "slug": "sentiment",
+        "kicker": "NLP · APPLIED ML",
+        "title": "Sentiment Analysis of Customer Reviews",
+        "desc": "NLP on 568k Amazon reviews, six models compared, Streamlit app",
+        "tech": "Python · scikit-learn · XGBoost · Streamlit",
+        "context": "Internship · Ai Variant",
+    },
+    {
         "slug": "insurance",
         "kicker": "REGRESSION",
         "title": "Insurance Premium Analysis",
         "desc": "Regression models to predict medical costs, interactive dashboard",
         "tech": "Python · scikit-learn · Streamlit",
         "context": "Internship · Ai Variant",
-    },
-    {
-        "slug": "inventory-lp",
-        "kicker": "OPTIMISATION",
-        "title": "Optimal Inventory Control",
-        "desc": "Linear programming for inventory decisions",
-        "tech": "Python · linear programming",
-        "context": "Coursework · SRH University",
     },
     {
         "slug": "smart-ats",
@@ -91,18 +94,22 @@ PROJECTS = [
 
 # ---------------------------------------------------------------- themes
 
+# Restrained palette: navy + one muted brass accent, neutral greys.
+NAVY, NAVY_DEEP = "#1B2A41", "#111A29"
 THEMES = {
     "light": {
-        "bg1": "#F4F8FB", "bg2": "#FFFFFF", "card": "#FFFFFF", "border": "#D8DEE4",
-        "text": "#1F2328", "muted": "#59636E", "accent": "#0E7490", "accent2": "#2563EB",
-        "pill": "#E6F4F7", "pilltext": "#0E6177", "grid": "#E3EAF0", "node": "#FFFFFF",
+        "frame": "#D9DEE5", "card": "#FFFFFF", "border": "#D9DEE5",
+        "text": "#1B2A41", "muted": "#4F5B6B", "accent": "#8A6A3B",
+        "tile": NAVY, "tiletext": "#FFFFFF", "link": "#1B2A41",
     },
     "dark": {
-        "bg1": "#0D1117", "bg2": "#111B27", "card": "#151B23", "border": "#30363D",
-        "text": "#E6EDF3", "muted": "#9198A1", "accent": "#2DD4BF", "accent2": "#58A6FF",
-        "pill": "#12302F", "pilltext": "#5EEAD4", "grid": "#1C2633", "node": "#161D27",
+        "frame": "#2A3442", "card": "#151C28", "border": "#2A3442",
+        "text": "#E8ECF1", "muted": "#9AA5B4", "accent": "#D4B27A",
+        "tile": "#22304A", "tiletext": "#D4B27A", "link": "#E8ECF1",
     },
 }
+BANNER = {"bg1": NAVY, "bg2": NAVY_DEEP, "name": "#FFFFFF", "role": "#D4B27A",
+          "tag": "#D5DCE5", "sub": "#9AA7B8", "rule": "#D4B27A", "line": "#33445E"}
 
 # ---------------------------------------------------------------- helpers
 
@@ -162,45 +169,27 @@ def svg(w, h, body, title):
 
 def banner(th):
     W, H = 1200, 300
-    c = THEMES[th]
+    c, b = THEMES[th], BANNER
     parts = [
-        '<defs>'
-        f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">'
-        f'<stop offset="0" stop-color="{c["bg1"]}"/><stop offset="1" stop-color="{c["bg2"]}"/></linearGradient>'
-        f'<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">'
-        f'<circle cx="2" cy="2" r="1.3" fill="{c["grid"]}"/></pattern>'
-        '</defs>',
-        f'<rect width="{W}" height="{H}" rx="16" fill="url(#bg)"/>',
-        f'<rect x="640" width="{W-640}" height="{H}" rx="16" fill="url(#dots)"/>',
-        f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="16" fill="none" stroke="{c["border"]}"/>',
-        f'<rect x="64" y="72" width="44" height="5" rx="2.5" fill="{c["accent"]}"/>',
-        t(64, 140, PROFILE["name"], 58, c["text"], 700, spacing="-1"),
-        t(64, 186, PROFILE["role"], 28, c["accent"], 600),
-        t(64, 228, PROFILE["tagline"], 22, c["text"], 500),
-        t(64, 262, PROFILE["sub"], 18, c["muted"]),
+        '<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">'
+        f'<stop offset="0" stop-color="{b["bg1"]}"/><stop offset="1" stop-color="{b["bg2"]}"/>'
+        '</linearGradient></defs>',
+        f'<rect width="{W}" height="{H}" rx="14" fill="url(#bg)"/>',
+        f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="{c["frame"]}"/>',
+        f'<rect x="64" y="70" width="40" height="3" fill="{b["rule"]}"/>',
+        t(64, 138, PROFILE["name"], 58, b["name"], 700, spacing="-0.5"),
+        t(64, 182, PROFILE["role"], 26, b["role"], 500, spacing="0.3"),
+        t(64, 224, PROFILE["tagline"], 20, b["tag"], 400),
+        t(64, 258, PROFILE["sub"], 18, b["sub"], 400, spacing="0.2"),
     ]
-
-    # Flow motif: four steps left to right, slightly staggered, with arrows.
-    nw, nh, gap = 104, 44, 30
-    x0 = W - 56 - (len(FLOW) * nw + (len(FLOW) - 1) * gap)
-    nodes = [(x0 + i * (nw + gap), 104 if i % 2 == 0 else 136) for i in range(len(FLOW))]
-    for (x1, y1), (x2, y2) in zip(nodes, nodes[1:]):
-        sx, sy, ex, ey = x1 + nw + 4, y1 + nh / 2, x2 - 4, y2 + nh / 2
-        parts.append(f'<line x1="{sx}" y1="{sy}" x2="{ex - 2}" y2="{ey}" stroke="{c["accent2"]}" '
-                     f'stroke-width="2" stroke-dasharray="4 4"/>')
-        parts.append(f'<circle cx="{ex}" cy="{ey}" r="3.5" fill="{c["accent2"]}"/>')
-    for i, ((x, y), label) in enumerate(zip(nodes, FLOW)):
-        last = i == len(FLOW) - 1
-        parts.append(f'<rect x="{x}" y="{y}" width="{nw}" height="{nh}" rx="10" fill="{c["node"]}" '
-                     f'stroke="{c["accent"] if last else c["border"]}" stroke-width="1.5"/>')
-        parts.append(f'<circle cx="{x + 18}" cy="{y + nh / 2}" r="5" fill="{c["accent"]}"/>')
-        parts.append(t(x + 30, y + nh / 2 + 5, label, 15, c["text"], 600))
-    # small bar chart under the last step ("Report")
-    lx, ly = nodes[-1]
-    base = ly + nh + 62
-    for j, hgt in enumerate([16, 26, 20, 36, 30]):
-        parts.append(f'<rect x="{lx + 14 + j * 16}" y="{base - hgt}" width="10" height="{hgt}" rx="2" '
-                     f'fill="{c["accent"]}" opacity="{0.45 + j * 0.11:.2f}"/>')
+    # right column: the two tracks, separated by a thin vertical rule
+    x = 790
+    parts.append(f'<line x1="{x - 36}" y1="64" x2="{x - 36}" y2="{H - 64}" stroke="{b["line"]}" stroke-width="1"/>')
+    for i, (label, line1, line2) in enumerate(TRACKS):
+        y = 92 + i * 96
+        parts.append(t(x, y, label, 15, b["role"], 700, spacing="2"))
+        parts.append(t(x, y + 32, line1, 22, b["name"], 500))
+        parts.append(t(x, y + 60, line2, 17, b["sub"], 400))
     return svg(W, H, "".join(parts), f'{PROFILE["name"]}: {PROFILE["role"]}')
 
 
@@ -213,36 +202,38 @@ def stack(th):
     parts = []
     for ci, (group, tools) in enumerate(STACK):
         x0 = ci * (colw + gap)
-        parts.append(f'<rect x="{x0 + 0.5}" y="0.5" width="{colw - 1}" height="{H - 1}" rx="14" '
+        parts.append(f'<rect x="{x0 + 0.5}" y="0.5" width="{colw - 1}" height="{H - 1}" rx="12" '
                      f'fill="{c["card"]}" stroke="{c["border"]}"/>')
-        parts.append(t(x0 + 24, 42, group.upper(), 16, c["accent"], 700, spacing="1.5"))
-        for ti, (mono, name, color) in enumerate(tools):
-            y = 64 + ti * 56
-            parts.append(f'<rect x="{x0 + 24}" y="{y}" width="42" height="42" rx="10" fill="{color}"/>')
-            fs = 16 if len(mono) <= 2 else 13
-            parts.append(t(x0 + 45, y + 27, mono, fs, "#FFFFFF", 700, anchor="middle"))
-            parts.append(t(x0 + 82, y + 28, name, 21, c["text"], 500))
+        parts.append(f'<rect x="{x0 + 24}" y="26" width="28" height="2" fill="{c["accent"]}"/>')
+        parts.append(t(x0 + 24, 50, group.upper(), 14, c["accent"], 700, spacing="2"))
+        for ti, (mono, name) in enumerate(tools):
+            y = 70 + ti * 54
+            parts.append(f'<rect x="{x0 + 24}" y="{y}" width="40" height="40" rx="8" fill="{c["tile"]}"/>')
+            fs = 15 if len(mono) <= 2 else 12
+            parts.append(t(x0 + 44, y + 25, mono, fs, c["tiletext"], 700, anchor="middle"))
+            parts.append(t(x0 + 80, y + 27, name, 20, c["text"], 500))
     return svg(W, H, "".join(parts), "Tools: " + "; ".join(
-        f'{g}: ' + ", ".join(n for _, n, _ in tl) for g, tl in STACK))
+        f'{g}: ' + ", ".join(n for _, n in tl) for g, tl in STACK))
 
 
 # ---------------------------------------------------------------- cards
 
 def card(p, th):
     c = THEMES[th]
-    W, H, pad = 520, 248, 26
+    W, H, pad = 520, 248, 28
     inner = W - 2 * pad
     parts = [
-        f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="14" fill="{c["card"]}" stroke="{c["border"]}"/>',
-        f'<rect x="0.5" y="0.5" width="6" height="{H - 1}" rx="3" fill="{c["accent"]}"/>',
-        t(pad, 42, p["kicker"], 14, c["accent"], 700, spacing="1.5"),
+        f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="{c["card"]}" stroke="{c["border"]}"/>',
+        f'<rect x="{pad}" y="24" width="28" height="2" fill="{c["accent"]}"/>',
+        t(pad, 48, p["kicker"], 13, c["accent"], 700, spacing="1.8"),
     ]
-    if p["context"]:  # context label, top right
-        pw = text_width(p["context"], 14, True) + 26
+    if p["context"]:  # context label, top right, outlined
+        pw = text_width(p["context"], 13, False) + 24
         px = W - pad - pw
-        parts.append(f'<rect x="{px:.0f}" y="22" width="{pw:.0f}" height="28" rx="14" fill="{c["pill"]}"/>')
-        parts.append(t(f"{px + pw / 2:.0f}", 41, p["context"], 14, c["pilltext"], 700, anchor="middle"))
-    y = 82
+        parts.append(f'<rect x="{px:.0f}" y="30.5" width="{pw:.0f}" height="25" rx="12.5" fill="none" '
+                     f'stroke="{c["accent"]}" stroke-opacity="0.6"/>')
+        parts.append(t(f"{px + pw / 2:.0f}", 47, p["context"], 13, c["muted"], 500, anchor="middle"))
+    y = 88
     for line in wrap(p["title"], 25, inner, bold=True)[:2]:
         parts.append(t(pad, y, line, 25, c["text"], 700))
         y += 32
@@ -252,8 +243,8 @@ def card(p, th):
         y += 26
     fy = H - 26  # footer: tech left, link right
     parts.append(f'<line x1="{pad}" y1="{fy - 26}" x2="{W - pad}" y2="{fy - 26}" stroke="{c["border"]}"/>')
-    parts.append(t(pad, fy, p["tech"], 15, c["muted"], 500))
-    parts.append(t(W - pad, fy, "View repo →", 15, c["accent2"], 600, anchor="end"))
+    parts.append(t(pad, fy, p["tech"], 15, c["muted"], 400))
+    parts.append(t(W - pad, fy, "View repo →", 15, c["link"], 600, anchor="end"))
     return svg(W, H, "".join(parts), f'{p["title"]}: {p["desc"]}')
 
 
