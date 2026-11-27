@@ -23,6 +23,9 @@ Built Power Platform automations for campaign operations.
 **Data Science Intern** · Ai Variant · Jul 2024 – Jan 2025<br>
 Machine learning and analytics projects with Python and Streamlit.
 
+**Web Solutions Specialist** · Newfold Digital · Jun 2020 – Sep 2020<br>
+Technical support for web solutions customers.
+
 ## Education
 
 **M.Sc. Supply Chain Management** · SRH University of Applied Sciences Hamburg · 2026<br>
